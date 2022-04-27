@@ -1,0 +1,20 @@
+<div class="mywork-container">
+  <h2>My work</h2>
+
+  <div class="button-container">
+    <button (click)="categorie = 'all'">All</button>
+    <button (click)="categorie = 'javascript'">JAVASCRIPT</button>
+    <button (click)="categorie = 'angular'">ANGULAR</button>
+  </div>
+
+  <div class="projects-container">
+    <div class="project-card" *ngFor="let project of getFilterProjects()">
+      <img class="project-img" [src]="project.img" />
+      <div class="project-overlay">
+        <p>{{ project.name }}</p>
+        <p>{{ project.categorie.toUpperCase() }}</p>
+        <a target="blank" [href]="project.url">View</a>
+      </div>
+    </div>
+  </div>
+</div>

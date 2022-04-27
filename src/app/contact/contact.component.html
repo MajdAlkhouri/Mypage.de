@@ -1,0 +1,34 @@
+<form id="contact" (ngSubmit)="handleSubmit(contactForm)"  #contactForm="ngForm">
+    <div id="contact" class="contact-section">
+        <div class="contact-content">
+            <h2>Contact me.</h2>
+            <p>Get in touch via the form below, or by emailing <span id="my-email">radwansultan@hotmail.de</span></p>
+            <label>Name</label>
+            <input [(ngModel)]="name" type="text" name="name" #nameInput="ngModel"
+             placeholder="Enter your name"
+             required>
+            <div class="contact-alert" *ngIf="nameInput.invalid && nameInput.dirty">
+                <span>*</span>your name is required.
+            </div>
+            <label>E-Mail Address</label>
+            <input [(ngModel)]="email" type="email" name="email" #emailInput="ngModel"
+             placeholder="Enter your E-Mail"
+             ngModel email="true" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"
+              required>
+            <div class="contact-alert" *ngIf="emailInput.invalid && emailInput.dirty">
+                <span>*</span>your E-Mail is required.Please enter a valid E-Mail.
+            </div>
+            <label>Message</label>
+            <textarea [(ngModel)]="message" type="text" name="message" #messageInput="ngModel"
+            placeholder="Enter your Message"
+            required>
+            </textarea>
+           <div class="contact-alert" *ngIf="messageInput.invalid && messageInput.dirty">
+               <span>*</span>your Message is required.
+           </div>
+        </div>
+        <div class="wrapper">
+           <button type="submit" [class.disabled]="contactForm.invalid" [disabled]="contactForm.invalid"><span>Send</span></button>
+        </div>
+    </div>
+</form>

@@ -1,0 +1,45 @@
+header {
+    height: 86px;
+  
+    background: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  
+    a {
+      width: 49px;
+      height: 19px;
+      left: 0px;
+      top: 0px;
+      color: white;
+      text-decoration: none;
+      margin-left: 39px;
+  
+      font-family: "Inter", sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+  
+      text-align: center;
+  
+      color: #ffffff;
+  
+      &:hover {
+        color: rgba(26, 121, 237, 0.8);
+        text-decoration: underline;
+      }
+    }
+  
+    img {
+      width: 100px;
+  margin-left: 132px;
+      margin-top: 32px;
+  
+      cursor: pointer;
+    }
+  
+    div {
+      margin-right: 190px;
+    }
+  }
+  

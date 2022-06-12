@@ -1,10 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 import { MoveDirection, ClickMode, HoverMode, OutMode, Engine, Container } from "tsparticles-engine";
-
+import { loadFull } from "tsparticles";
 
 @Component({
   selector: 'app-first',
+  
   templateUrl: './first.component.html',
   styleUrls: ['./first.component.scss']
 })
@@ -19,9 +20,13 @@ export class FirstComponent implements OnInit {
 
   /* or the classic JavaScript object */
   particlesOptions = {
+    fullScreen: {
+      enable: true,
+      zIndex: -1 // or any value is good for you, if you use -1 set `interactivity.detectsOn` to `"window"` if you need mouse interactions
+    },
     background: {
       color: {
-        value: "#0d47a1"
+        value: "#000000"
       }
     },
     fpsLimit: 120,
@@ -42,8 +47,8 @@ export class FirstComponent implements OnInit {
           quantity: 4
         },
         repulse: {
-          distance: 200,
-          duration: 0.4
+          distance: 150,
+          duration: 0.9
         }
       }
     },
@@ -68,7 +73,7 @@ export class FirstComponent implements OnInit {
           default: OutMode.bounce
         },
         random: false,
-        speed: 6,
+        speed: 3,
         straight: false
       },
       number: {
@@ -85,7 +90,7 @@ export class FirstComponent implements OnInit {
         type: "circle"
       },
       size: {
-        value: {min: 1, max: 5 },
+        value: {min: 1, max: 4 },
       }
     },
     detectRetina: true
@@ -104,11 +109,16 @@ export class FirstComponent implements OnInit {
     await loadFull(engine);
   }
 }
- //
+ /*
 function loadFull(_engine: Engine) {
   throw new Error('Function not implemented.');
 }
 
+async function particlesInit(engine: Engine): Promise<void> {
+  await loadFull(engine);
+
+}
+*/
 async function particlesInit(engine: Engine): Promise<void> {
   await loadFull(engine);
 

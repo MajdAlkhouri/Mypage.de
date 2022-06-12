@@ -1,0 +1,33 @@
+.media-container{
+    height: 220px;
+    width: 100%;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    div{
+        display: flex;
+        justify-content: inherit;
+        align-items: center;
+        width: 500px;
+        margin-right: 110px;
+
+
+
+        
+        img{
+            &:hover{
+                cursor: pointer;
+            }
+        }
+    }
+
+    span{
+        margin-left: 120px;
+
+        &:hover{
+            cursor: pointer;
+        }
+    }
+}

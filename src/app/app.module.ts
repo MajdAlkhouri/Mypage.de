@@ -12,6 +12,8 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
 import { NgParticlesModule } from 'ng-particles';
+import { MySkillsComponent } from './my-skills/my-skills.component';
+import { SocialMediaComponent } from './social-media/social-media.component';
 
 
 
@@ -26,6 +28,8 @@ import { NgParticlesModule } from 'ng-particles';
     ContactComponent,
     FirstComponent,
     AboutMeComponent,
+    MySkillsComponent,
+    SocialMediaComponent,
        
   ],
 

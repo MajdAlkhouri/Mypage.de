@@ -11,7 +11,7 @@ export class ContactComponent implements OnInit {
   email: any; 
   message: any; 
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient , ) { }
 
   ngOnInit(): void {
   }
@@ -35,7 +35,7 @@ export class ContactComponent implements OnInit {
     )
     this.clearForm();
   }
-  // action="https://radwansultan.de/send_mail.php" method="POST"
+ 
 }
 
 

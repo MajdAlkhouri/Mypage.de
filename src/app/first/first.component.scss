@@ -18,17 +18,16 @@
   background-color:rgb(61, 90, 254);
   border-radius: 50%;
   display: flex;
-  align-items: center;
+
   justify-content: center;
   width: 450px;
   height: 450px;
 
   img {
-    width: 330px;
-    height: 440px;
-    border-radius: 50%;
- 
-    background: none;
+    width: 400px;
+    height: 400px;
+  
+    border-radius: 16rem 14rem 8rem 8rem;
   }
 }
 

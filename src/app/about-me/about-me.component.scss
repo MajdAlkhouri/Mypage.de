@@ -57,21 +57,14 @@
         margin-top: -100px;
     }
 
-    .img-container{
-      margin-top: 50px;
-      display:flex ;
-      justify-content: center;
-      width: 300px;
-      height: 340px;
-      background-color: rgb(135, 135, 128);
-      border-radius: 50%;
-      align-items: center;
 
-      img{
-        width: 220px;
-       
-        border-radius: 25%;
-         height: 300px;
+
+      .img-about{
+        width: 330px;
+        height: 323px;
+        margin-top: 45px;
+        border-radius: 100%;
+        object-fit: cover;
       }
 
-    }
+    

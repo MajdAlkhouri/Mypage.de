@@ -9,25 +9,19 @@
 
   animation: an 4s ease-out 1 both;
   span {
-    color: rgba(26, 121, 237, 0.8);
+    color:rgb(44, 78, 254);
   }
 }
 
 .Profil-img-container{
-  margin-top: 53px;
-  background-color:rgb(61, 90, 254);
-  border-radius: 50%;
-  display: flex;
 
-  justify-content: center;
-  width: 450px;
-  height: 450px;
 
   img {
     width: 400px;
     height: 400px;
-  
-    border-radius: 16rem 14rem 8rem 8rem;
+    border-radius: 100%;
+    margin-top: 53px;
+    object-fit: cover;
   }
 }
 

@@ -36,7 +36,7 @@ export class MyWorkComponent implements OnInit {
 
     {
       name: 'Ring Of Fire',
-      img: 'assets/images/images.jpg',
+      img: 'assets/images/ringOfFire.png',
       categorie: 'angular',
       url: '',
     },

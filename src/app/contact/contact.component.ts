@@ -24,7 +24,7 @@ export class ContactComponent implements OnInit {
 
   handleSubmit(ngForm: { form: { value: any; }; }){
     console.log(ngForm);
-    this.http.post('https://majd-alkhouri.developerakademie.com/Sendmail.php', JSON.stringify(ngForm.form.value))
+    this.http.post('https://majd-alkhouri.developerakademie.com/portfolio/Sendmail.php', JSON.stringify(ngForm.form.value))
     .subscribe(
      {
        next :  (response)=> {

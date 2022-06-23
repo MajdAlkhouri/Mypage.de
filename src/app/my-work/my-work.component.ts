@@ -69,4 +69,13 @@ export class MyWorkComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  javaScript(){
+    const box = document.getElementById('Projects') as HTMLDivElement | null;
+
+console.log(box?.innerHTML); // 👉️ "hello world"
+
+  // document.getElementById("Projects").style.backgroundColor = 'lime'
+
+  }
+
 }

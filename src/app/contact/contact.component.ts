@@ -24,11 +24,11 @@ export class ContactComponent implements OnInit {
 
   handleSubmit(ngForm: { form: { value: any; }; }){
     console.log(ngForm);
-    this.http.post('https://majd-alkhouri.developerakademie.com/Sendmail.php', JSON.stringify(ngForm.form.value))
+    this.http.post('https:/majd-alkhouri.developerakademie.com/Sendmail.php', JSON.stringify(ngForm.form.value), {responseType: 'text'})
     .subscribe(
      {
-       next :  (response)=> {
-        
+       next :  (response: any)=> {
+         window.alert("Message Received");
        },
        error : (error)=> console.error(error)
      }

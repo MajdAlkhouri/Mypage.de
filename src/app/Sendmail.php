@@ -18,11 +18,12 @@ switch($_SERVER['REQUEST_METHOD']){
         $name = $params->name;
         $message = $params->message;
 
-        $recipient = 'mjodizaodiz@gmail.com'; //your email address
+        $recipient = "mjodizaodiz@gmail.com"; //your email address
         $subject = "Contact From $name <$email>";
         $headers = "From:  noreply@mywebsite.com";
 
         mail($recipient, $subject, $message, $headers);
+        echo("Email send from : $name <$email> $message");
         break;
     default: //Reject any non POST or OPTIONS requests.
         header("Allow: POST", true, 405);

@@ -28,7 +28,7 @@ export class ContactComponent implements OnInit {
     .subscribe(
      {
        next :  (response)=> {
-         window.alert("Message Received");
+        
        },
        error : (error)=> console.error(error)
      }

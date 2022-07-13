@@ -70,11 +70,7 @@ export class MyWorkComponent implements OnInit {
   }
 
   javaScript(){
-    const box = document.getElementById('Projects') as HTMLDivElement | null;
-
-console.log(box?.innerHTML); // 👉️ "hello world"
-
-  // document.getElementById("Projects").style.backgroundColor = 'lime'
+  
 
   }
 

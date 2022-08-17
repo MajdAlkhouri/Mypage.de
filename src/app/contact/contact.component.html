@@ -31,13 +31,7 @@
            <button type="submit" [class.disabled]="contactForm.invalid" [disabled]="contactForm.invalid"><span>Send</span></button>
         </div>
 
-        <form #form action="http://majd-alkhouri.developerakademie.com/send_mail.php" method="POST">
-            <input name="name" placeholder="Dein Name">
     
-            <textarea name="message" placeholder="Deine Nachricht an uns"></textarea>
-    
-            <button type="submit" (click)="form.submit()">Mail senden</button>
-        </form>
         
     </div>
 </form>

@@ -16,7 +16,7 @@ export class MyWorkComponent implements OnInit {
     },
     {
       name: 'JOIN',
-      img: 'assets/images/logo2.png',
+      img: 'assets/images/logo2.jpeg',
       categorie: 'javascript',
       url: '',
     },
@@ -69,9 +69,6 @@ export class MyWorkComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  javaScript(){
-  
 
-  }
 
 }

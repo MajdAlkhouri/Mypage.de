@@ -43,6 +43,7 @@ import { SocialMediaComponent } from './social-media/social-media.component';
     FormsModule,
     HttpClientModule,
 
+
   ],
   providers: [],
   bootstrap: [AppComponent],

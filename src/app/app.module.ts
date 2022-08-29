@@ -14,7 +14,7 @@ import { CommonModule } from '@angular/common';
 import { NgParticlesModule } from 'ng-particles';
 import { MySkillsComponent } from './my-skills/my-skills.component';
 import { SocialMediaComponent } from './social-media/social-media.component';
-
+//import {MatButtonModule} from '@angular/material/button';
 
 
 
@@ -42,8 +42,7 @@ import { SocialMediaComponent } from './social-media/social-media.component';
     BrowserAnimationsModule,
     FormsModule,
     HttpClientModule,
-
-
+   
   ],
   providers: [],
   bootstrap: [AppComponent],
